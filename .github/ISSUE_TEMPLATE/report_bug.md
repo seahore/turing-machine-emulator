@@ -1,8 +1,8 @@
 ---
 name: 报告Bug
-about: Create a report to help us improve
+about: 报告问题以便我们改进
 title: ''
-labels: ''
+labels: 'bug'
 assignees: seahore
 
 ---
