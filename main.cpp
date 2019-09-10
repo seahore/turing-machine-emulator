@@ -1,22 +1,5 @@
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <map>
+#include "main.h"
 using namespace std;
-
-struct Instruction {
-    int  q;
-    char x, w, h;
-
-    Instruction() {}
-
-    Instruction(char x, char w, char h, int q) : x(x), w(w), h(h), q(q) {}
-};
-
-struct State {
-    vector<Instruction> instrs;
-};
 
 int main() {
     string tape;
@@ -24,9 +7,9 @@ int main() {
     map<int, State> states;
     const char LEFT = 'L', RIGHT = 'R', HOLD = 'N';
 
-    cout << "TURING MACHINE DEMO v1.0.0" << endl << "Copyright 2019 Tan Shihuai. *NO* right reserved." << endl << endl << "Please input the tape contents: ";
+    cout << "TURING MACHINE DEMO v1.0.0" << endl << "Copyright 2019 Tan Shihuai. *NO* right reserved." << endl << endl << "Please input the tape contents: " << endl;
     cin >> tape;
-    cout << endl << "Pattern: state(int), x(char), w(char), h(char), next(int)" << endl << "Please input the instructions, leave blank to terminate input: ";
+    cout << endl << "Pattern: state(int), x(char), w(char), h(char), next(int)" << endl << "Please input the instructions, leave blank to terminate input: " << endl;
     string instr;
     while (true) {
         instr = "";
@@ -91,7 +74,7 @@ int main() {
             system("pause");
         }
     }
-terminate:
+    terminate:
     cout << endl << "Final tape content: " << tape << endl << "Machine Terminated." << endl;
     system("pause");
     return 0;
