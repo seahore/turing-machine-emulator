@@ -1,7 +1,12 @@
-cmake_minimum_required(VERSION 3.14)
-project(Turing_Machine)
+cmake_minimum_required(VERSION 2.8)
+project(Turing_Machine_Sim)
 
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(CMAKE_BUILD_TYPE "Release")
 
-add_executable(Turing_Machine main.cpp)
+aux_source_directory(. DIR_SRC)
+link_directories(/usr/lib)
+
+add_executable(Turing_Machine_Sim ${DIR_SRC})

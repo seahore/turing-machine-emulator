@@ -5,11 +5,14 @@ compiler:
   - gcc
 os:
   - linux
-before_install:
+install:
   - sudo apt-get update
   - sudo apt-get install -y libc++-dev libc++abi-dev bsdtar libedit-dev
+  - sudo apt-get install -y cmake
 script:
-  - g++ -std=c++11 main.cpp -o ./bin/tms
+  - sudo cmake .
+  - sudo make
+  - sudo ./bin/Turing_Machine_Sim
 branches:
   only:
     - master
