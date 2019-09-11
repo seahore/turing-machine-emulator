@@ -12,7 +12,14 @@ install:
 script:
   - sudo cmake .
   - sudo make
-  - sudo ./bin/Turing_Machine_Sim
+  - sudo ./bin/Turing_Machine_Sim ./demo/4-bit-adder/e1.txt
+  - cd .
+  - sudo ./bin/Turing_Machine_Sim ./demo/4-bit-adder/e2.txt
+  - cd .
+  - sudo ./bin/Turing_Machine_Sim ./demo/x-plus-1/e1.txt
+  - cd .
+  - sudo ./bin/Turing_Machine_Sim ./demo/x-plus-1/e2.txt
+  - cd .
 branches:
   only:
     - master
