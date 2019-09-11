@@ -1,0 +1,17 @@
+language: cpp
+sudo: required
+dist: trusty
+compiler:
+  - gcc
+os:
+  - linux
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y libc++-dev libc++abi-dev bsdtar libedit-dev
+script:
+  - g++ -std=c++11 main.cpp -o ./bin/tms
+branches:
+  only:
+    - master
+notifications:
+  email: true
