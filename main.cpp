@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
     if(argc > 1) {
         fsin.open(argv[1]);
         if(fsin.fail()) {
-            cerr << "Invalid input file. Simulator terminated.";
+            cerr << "Invalid input file. Emulator terminated.";
             return 1;
         }
         cin.rdbuf(fsin.rdbuf());
@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     const char LEFT = 'L', RIGHT = 'R', HOLD = 'N';
 
     // 欢迎语 与 输入纸带内容
-    cout << "TURING MACHINE SIMULATOR v1.0.0" << endl << "Copyright 2019 Tan Shihuai. *NO* right reserved." << endl << endl << "Please input the tape contents: " << endl;
+    cout << "TURING MACHINE EMULATOR v1.0.0" << endl << "Copyright 2019 Tan Shihuai. *NO* right reserved." << endl << endl << "Please input the tape contents: " << endl;
     cin >> tape;
 
     // 输入并处理指令集
