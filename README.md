@@ -1,6 +1,6 @@
-# 图灵机模拟器 C++实现 Turing Machine Simulator in C++
+# 图灵机模拟器 C++实现 Turing Machine Emulator in C++
 
-[![Build Status](http://img.shields.io/travis/seahore/turing-machine-sim/master.svg?style=flat)](https://travis-ci.org/seahore/turing-machine-sim)
+[![Build Status](http://img.shields.io/travis/seahore/turing-machine-emulator/master.svg?style=flat)](https://travis-ci.org/seahore/turing-machine-emulator)
 
 武汉大学计算机导论课作业
 
